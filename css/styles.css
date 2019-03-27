@@ -50,6 +50,20 @@ h1 {
   font-size: 1.9em;
 }
 
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
+  color: hsl(243, 87%, 12%);
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+}
+
 p {
   font-family: 'Open sans', sans-serif;
   color: hsl(0, 0%, 50%);
@@ -68,7 +82,7 @@ header div {
   text-align: center;
 }
 
-.illustration-main {
+.illustration-main img {
   width: 100%;
   padding: 40px;
 }
@@ -87,9 +101,81 @@ header div {
   width: 50%;
 }
 
+
+/*** Top-middle section ***/
+.top-middle {
+  background-color: #FBFBFB;
+  text-align: center;
+}
+
+.stay-productive-text{
+  margin: 80px 10px; 80px;
+}
+
+.stay-productive-text h2 {
+  width: 60%;
+  margin: 30px auto;
+}
+
+.stay-productive-blocks div {
+  margin: 60px 0;
+  padding: 20px 55px;
+}
+
+
+/*** Bottom middle section ***/
+.connect-text {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.connect-text h2 {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.block{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(221,221,221,1);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(221,221,221,1);
+  box-shadow: 0px 0px 10px 1px rgba(221,221,221,1);
+}
+
+.app-logo {
+  border-bottom: 3px solid #eee;
+  padding: 30px;
+}
+
+.app-logo img {
+  width: 100%;
+}
+
+.app-text {
+  padding: 0 10px;
+}
+
+.app-text p {
+  font-size: 0.8em;
+}
+
+
 @media only screen and (min-width: 768px){
   .container {
     padding: 40px 80px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1em;
   }
 
   header {
@@ -107,10 +193,36 @@ header div {
   .illustration-main {
     float: right;
     width: 50%;
-    padding: 0;
+    text-align: right;
+    margin-top: 60px;
+  }
+
+  .illustration-main img {
+  width: 80%;
   }
 
   .logo-container img {
     width: auto;
+  }
+
+  .text-container {
+    margin-top: 200px;
+    width: 38%;
+  }
+
+  .green-big-btn {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 15px 60px;
+  }
+
+  .transparent-btn {
+    font-size: 0.9em;
+    padding: 7px 20px;
+  }
+
+  .green-btn {
+    font-size: 0.9em;
+    padding: 7px 20px;
   }
 }
