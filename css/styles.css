@@ -1,0 +1,116 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.transparent-btn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 0.7em;
+  font-family: 'Open Sans', sans-serif;
+  padding: 5px 10px;
+}
+
+.green-btn {
+  background-color: hsl(163, 95%, 43%);
+  border: none;
+  color: #fff;
+  font-size: 0.7em;
+  font-family: 'Open Sans', sans-serif;
+  padding: 5px 20px;
+  border-radius: 2px;
+}
+
+.green-big-btn {
+  background-color: hsl(163, 95%, 43%);
+  border: none;
+  color: #fff;
+  font-size: 0.8em;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px 40px;
+  border-radius: 2px;
+}
+
+.container {
+  padding: 30px 15px;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.9em;
+}
+
+p {
+  font-family: 'Open sans', sans-serif;
+  color: hsl(0, 0%, 50%);
+  line-height: 1.5;
+  font-size: 0.9em;
+}
+
+/*** Top section ***/
+header {
+  background-image: url('../images/bg-intro-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+header div {
+  text-align: center;
+}
+
+.illustration-main {
+  width: 100%;
+  padding: 40px;
+}
+
+.logo-container {
+  float: left;
+  width: 50%;
+}
+
+.logo-container img {
+  width: 45%;
+}
+
+.buttons-container {
+  float: right;
+  width: 50%;
+}
+
+@media only screen and (min-width: 768px){
+  .container {
+    padding: 40px 80px;
+  }
+
+  header {
+    background-image: url('../images/bg-intro-desktop.svg');
+  }
+
+  header div {
+    text-align: unset;
+  }
+
+  .buttons-container {
+    text-align: right;
+  }
+
+  .illustration-main {
+    float: right;
+    width: 50%;
+    padding: 0;
+  }
+
+  .logo-container img {
+    width: auto;
+  }
+}
